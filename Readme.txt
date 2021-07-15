@@ -10,6 +10,13 @@ To: The source has been altered either by random data corruption or intentional 
 
 The original Setup project is no longer supported by VS2019, it has been removed so this will not have a friendly installer. The executables can be manually deployed or just overwritten on an install of the original v310.
 
+Changed files to deploy listed below, these are the only files in my C:\Program Files\AESCrypt, optionally rename the existing files or folder to keep the unaltered version, you may need to reboot to pick up the updated dll.
+AESCrypt.dll
+aescrypt.exe
+AESCrypt32.exe
+
+Tested by encrypting and decrypting half a dozen files from 200k up to 6Gb created with both the existing v310 and with this DDOF version.
+
 ========= Original read.me below ============
 
 AESCrypt File Format Description
