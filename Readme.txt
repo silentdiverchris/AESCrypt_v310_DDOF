@@ -1,6 +1,6 @@
 Version 310 DDOF - Don't Delete Output File : A very minor change to stop it deleting the output file if it finds the input file to have been altered, whether through random corruption or intentional tampering. 
 
-Original source copied from source 'AES Crypt source code (Windows)' on the AES Crypt web site at https://www.aescrypt.com/download/ - thanks to Packetizer at https://www.packetizer.com/, the authors of this great free software.
+Original source copied from source 'AES Crypt source code (Windows)' on the AES Crypt web site at https://www.aescrypt.com/download/ - thanks to Packetizer at https://www.packetizer.com/, the authors of this great open source software.
 
 If vanilla v310 finds the input to be inconsistent with the checksum it will report an error and delete the output file, which may well not be what the user wants.
 
