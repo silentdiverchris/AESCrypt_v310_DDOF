@@ -1,3 +1,11 @@
+DDOF - Don't Delete Output File : A very simple change, in theory, to stop it deleting the output file if it finds the input file to have been altered, whether through random corruption or intentional tampering. 
+
+If vanilla v310 finds the input to be inconsistent with the checksum it will report an error and delete the output file, which may well not be what the user wants.
+
+This version extends the error message to give ample warning that the output file may not be what was originally encrypyted but not delete the output, allowing the user to decide whether they want to look at or trust whatever it's managed to dig out of the encrypted source.
+
+========= Original read.me below ============
+
 AESCrypt File Format Description
 
 Items in quotes are a literal string.  Words outside of quotes
