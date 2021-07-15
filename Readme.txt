@@ -22,6 +22,8 @@ AESCrypt32.exe
 
 Tested by encrypting and decrypting half a dozen files from 200k up to 6Gb created with both the existing v310 and with this DDOF version.
 
+See https://github.com/silentdiverchris/AESCrypt_v310_DDOF/blob/master/AESCryptUpdatedErrorMessage.png for updated error message when it finds a file that has been altered since encryption.
+
 ========= Original read.me below ============
 
 AESCrypt File Format Description
