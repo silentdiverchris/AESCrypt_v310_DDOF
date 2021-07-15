@@ -41,7 +41,8 @@
 
 // STL
 #include <list>
-typedef std::list< std::basic_string<TCHAR> > StringList;
+#include <string>
+typedef std::list<std::basic_string<TCHAR>> StringList;
 
 // Win32
 #include <commctrl.h>

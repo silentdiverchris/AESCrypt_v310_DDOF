@@ -42,7 +42,8 @@
 // STL
 // STL
 #include <list>
-typedef std::list< std::basic_string<TCHAR> > StringList;
+#include <string>
+typedef std::list<std::basic_string<TCHAR>> StringList;
 
 // What is the longest password in characters?
 #define MAX_PASSWD_LEN  1024
