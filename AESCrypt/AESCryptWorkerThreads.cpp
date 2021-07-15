@@ -1446,7 +1446,7 @@ void AESCryptWorkerThreads::DecryptFiles(
                                 throw SystemErrorException(
                                             _T("Error in file ") +
                                             in_file +
-                                            _T("\nMessage has been altered and should not be trusted."),
+                                            _T("\nThe source has been altered either by random data corruption or intentional tampering, the resulting file may not be identical to what was originally encrypted."),
                                             0);
                             }
                         }
@@ -1475,12 +1475,11 @@ void AESCryptWorkerThreads::DecryptFiles(
                     error_abort = true;
                 }
 
-                // We will attempt to cleanup, but we don't care if this
-                // really works or not...
-                if (error_abort == true)
-                {
-                    DeleteFile(out_file);
-                }
+                // Below commented out to not delete the output file
+                //if (error_abort == true)
+                //{
+                //    DeleteFile(out_file);
+                //}
             }
         }
 
