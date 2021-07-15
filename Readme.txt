@@ -1,4 +1,6 @@
-DDOF - Don't Delete Output File : A very minor change to stop it deleting the output file if it finds the input file to have been altered, whether through random corruption or intentional tampering. 
+Version 310 DDOF - Don't Delete Output File : A very minor change to stop it deleting the output file if it finds the input file to have been altered, whether through random corruption or intentional tampering. 
+
+Original source copied from source 'AES Crypt source code (Windows)' on the AES Crypt web site at https://www.aescrypt.com/download/ - thanks to Packetizer at https://www.packetizer.com/, the authors of this great free software.
 
 If vanilla v310 finds the input to be inconsistent with the checksum it will report an error and delete the output file, which may well not be what the user wants.
 
@@ -10,7 +12,10 @@ To: The source has been altered either by random data corruption or intentional 
 
 The original Setup project is no longer supported by VS2019, it has been removed so this will not have a friendly installer. The executables can be manually deployed or just overwritten on an install of the original v310.
 
-Changed files to deploy listed below, these are the only files in my C:\Program Files\AESCrypt, optionally rename the existing files or folder to keep the unaltered version, you may need to reboot to pick up the updated dll.
+You'll need to install optional feature 'C++ MFC for latest v142 build tools (x86 & x64)' to build it locally, use Visual Studio Installer and 'Modify' your existing install.
+
+Three changed files to deploy listed below, these are the only files in my C:\Program Files\AESCrypt, optionally rename the existing files or folder to keep the unaltered version, you may need to reboot to pick up the updated dll. These three files are included here under the 'binaries' folder but the safest option is always to build it locally.
+
 AESCrypt.dll
 aescrypt.exe
 AESCrypt32.exe
